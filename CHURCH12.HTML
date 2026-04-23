@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FGCK Shiloh Church</title>
+
+<link rel="stylesheet" href="styles2.css">
+<script defer src="script.js"></script>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <h1 class="logo">FGCK SHILOH</h1>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#sermons">Sermons</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#giving">Give</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h2>Welcome to FGCK Shiloh</h2>
+        <p>Experience God. Grow Together. Serve Others.</p>
+        <a href="#giving" class="btn">Give Online</a>
+    </section>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2>About Our Church</h2>
+    <p>FGCK Shiloh is a Christ-centered church focused on worship, discipleship, and community transformation.</p>
+</section>
+
+<!-- SERMONS -->
+<section id="sermons" class="section light">
+    <h2>Latest Sermons</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Faith That Moves Mountains</h3>
+            <button onclick="watchSermon()">Watch</button>
+        </div>
+        <div class="card">
+            <h3>Walking in Purpose</h3>
+            <button onclick="watchSermon()">Watch</button>
+        </div>
+    </div>
+</section>
+
+<!-- EVENTS -->
+<section id="events" class="section">
+    <h2>Upcoming Events</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Youth Conference</h3>
+            <p>May 10, 2026</p>
+        </div>
+        <div class="card">
+            <h3>Prayer Night</h3>
+            <p>Every Friday 6PM</p>
+        </div>
+    </div>
+</section>
+
+<!-- GIVING -->
+<section id="giving" class="section light">
+    <h2>Give / Tithe</h2>
+
+    <input type="number" id="amount" placeholder="Amount (KES)">
+    <input type="text" id="phone" placeholder="2547XXXXXXXX">
+
+    <button onclick="payNow()">Give via M-Pesa</button>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+
+    <form onsubmit="sendMessage(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 FGCK Shiloh Church</p>
+</footer>
+
+</body>
+</html>
